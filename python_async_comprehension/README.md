@@ -1,0 +1,1 @@
+If you wanna read huge README you should go main page i think ))))
