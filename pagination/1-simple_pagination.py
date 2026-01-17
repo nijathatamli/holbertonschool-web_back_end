@@ -35,6 +35,7 @@ class Server:
 
         return self.__dataset
 
+
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """
         Implement a method named get_page that takes two integer
