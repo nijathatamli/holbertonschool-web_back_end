@@ -47,7 +47,7 @@ class Server:
         dataset = self.dataset()
         start, end = index_range(page, page_size)
         return dataset[start:end] if start < len(dataset) else []
-    
+
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
         """
         Return a dictionary containing pagination details.
@@ -57,10 +57,10 @@ class Server:
         total_items = len(self.dataset())
         total_pages = math.ceil(total_items / page_size)
         return {
-            "page_size" : len(data),
-            "page" : page,
-            "data" : data,
-            "next_page" : page + 1 if page < total_pages else None,
-            "prev_page" : page - 1 if page - 1 else None,
-            "total_pages" : total_pages
+            "page_size":len(data),
+            "page":page,
+            "data":data,
+            "next_page":page + 1 if page < total_pages else None,
+            "prev_page":page - 1 if page - 1 else None,
+            "total_pages":total_pages
         }
