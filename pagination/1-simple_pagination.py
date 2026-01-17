@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+"""
+ Simple helper function
+"""
 import csv
 import math
 from typing import List
@@ -32,6 +36,11 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
+        """
+        Implement a method named get_page that takes two integer
+        arguments page with default value 1
+        and page_size with default value 10.
+        """
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0
         dataset = self.dataset()
