@@ -3,6 +3,7 @@
  Simple helper function
 """
 
+
 def index_range(page, page_size) -> tuple:
     """
     Return a tuple of size two containing a start
