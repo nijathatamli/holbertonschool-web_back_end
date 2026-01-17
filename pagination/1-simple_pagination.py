@@ -6,6 +6,7 @@ import csv
 import math
 from typing import List
 
+
 def index_range(page, page_size) -> tuple:
     """
     Return a tuple of size two containing a start
@@ -34,7 +35,6 @@ class Server:
             self.__dataset = dataset[1:]
 
         return self.__dataset
-
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """
